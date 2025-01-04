@@ -1,4 +1,5 @@
 # Fitmapp Website
+Navigate to Issues tab for tasks
 
 ## Figma
 - Figma Url: https://www.figma.com/design/CAPCgFmHShWT4M8KUEWemF/Final-Pages?m=auto&t=DBmL68qvQIX7rYyC-1   
