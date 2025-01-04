@@ -57,9 +57,7 @@ By following these guidelines, we can ensure a productive and collaborative deve
 
 ## Images
 
-## Images
-
-<img src="Images/img1.jpg" alt="Image1" width="300"/>
-<img src="Images/img2.jpg" alt="Image2" width="100"/>
-<img src="Images/img3.jpg" alt="Image3" width="300"/>
-<img src="Images/img4.jpg" alt="Image4" width="300"/>
+![Image1](Images/img1.jpg)
+![Image2](Images/img2.jpg)
+![Image3](Images/img3.jpg)
+![Image4](Images/img4.jpg)
