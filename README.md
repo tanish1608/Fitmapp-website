@@ -8,9 +8,9 @@
 ### To run the project do the following
 - Install and setup vscode, Nodejs, React, npm.
 - ```git clone https://github.com/tanish1608/Fitmapp-website.git```
-- ``` cd Fitmapp-website```
-- ``` npm install ```
-- ``` npm run dev ```
+- ```cd Fitmapp-website```
+- ```npm install ```
+- ```npm run dev ```
 
 
 ## Contribution Guidelines  
@@ -55,3 +55,11 @@ Thank you for contributing to this project! To ensure smooth collaboration, plea
 
 By following these guidelines, we can ensure a productive and collaborative development process. Thank you!
 
+## Images
+
+## Images
+
+<img src="Images/img1.jpg" alt="Image1" width="300"/>
+<img src="Images/img2.jpg" alt="Image2" width="100"/>
+<img src="Images/img3.jpg" alt="Image3" width="300"/>
+<img src="Images/img4.jpg" alt="Image4" width="300"/>
