@@ -1,6 +1,7 @@
 import React from 'react';
 import { LayoutDashboard, Users, ClipboardList, Library, Settings, User, ChevronLeft } from 'lucide-react';
 import { Link } from './ui/Link';
+import logo from '../../Images/logo.png'; // Importing the logo
 
 interface SidebarProps {
   isOpen: boolean;
@@ -12,8 +13,20 @@ interface SidebarProps {
 export function Sidebar({ isOpen, onToggle, onNavigate, currentPage }: SidebarProps) {
   return (
     <div className={`bg-[#1a1a1a] h-screen fixed transition-all duration-300 ${isOpen ? 'w-64' : 'w-20'}`}>
+      {/* Header Section */}
       <div className="p-4 flex items-center justify-between">
-        <div className={`text-purple-500 font-bold text-2xl ${!isOpen && 'hidden'}`}>fitmapp</div>
+        {/* Logo */}
+        <div className="flex items-center">
+          <img 
+            src={logo} 
+            alt="Fitmapp Logo" 
+            className={`logo ${!isOpen && 'hidden'}`} // Show only when sidebar is open
+          />
+          {isOpen && (
+            <span className="text-purple-500 font-bold text-xl ml-2"></span>
+          )}
+        </div>
+        {/* Toggle Button */}
         <button 
           onClick={onToggle}
           className="p-2 hover:bg-gray-800 rounded-lg text-gray-400"
@@ -22,6 +35,7 @@ export function Sidebar({ isOpen, onToggle, onNavigate, currentPage }: SidebarPr
         </button>
       </div>
       
+      {/* Navigation Section */}
       <nav className="flex-1">
         <ul className="space-y-2 p-4">
           <li>
@@ -61,6 +75,7 @@ export function Sidebar({ isOpen, onToggle, onNavigate, currentPage }: SidebarPr
         </ul>
       </nav>
 
+      {/* Footer Section */}
       <div className="mt-auto p-4">
         <ul className="space-y-2">
           <li>

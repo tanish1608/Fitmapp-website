@@ -28,3 +28,26 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #444;
 }
+
+/* Updated logo styling */
+.logo {
+  height: auto;
+  max-height: 40px;
+  width: auto;
+  margin: 0 10px 0 20px;
+}
+
+/* Sidebar Header Alignment */
+.flex.items-center {
+  display: flex;
+  align-items: center;
+}
+
+/* Responsive Adjustments for Smaller Screens */
+@media (max-width: 768px) {
+  .logo {
+    max-height: 30px;
+    margin-left: 10px;
+    margin-right: 5px;
+  }
+}
