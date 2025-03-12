@@ -1,32 +1,16 @@
 export interface Client {
   id: string;
+  trainer_id: string;
   name: string;
-  avatar?: string;
-  startDate: string;
-  endDate: string;
-  workoutScore: number;
-  dietScore: number;
-  lastUpdate: string;
-  age: number;
-  gender: 'M' | 'F' | 'Other';
-  weight: number;
-  height: string;
-  dietaryRestrictions: string[];
-  movementRestrictions: string[];
-  isVegetarian: boolean;
-  plan: {
-    name: string;
-    startDate: string;
-    endDate: string;
-  };
-  sessionsCompleted: number;
-  complianceRate: number;
-}
-
-export interface Exercise {
-  name: string;
-  sets: number;
-  reps: number;
-  weight: number;
-  time?: number;
+  email: string | null;
+  avatar_url: string | null;
+  age: number | null;
+  gender: string | null;
+  weight: number | null;
+  height: string | null;
+  is_vegetarian: boolean;
+  dietary_restrictions: string[];
+  movement_restrictions: string[];
+  created_at: string;
+  updated_at: string;
 }

@@ -47,13 +47,23 @@ export function Sidebar({ isOpen, onToggle, onNavigate, currentPage }: SidebarPr
             </Link>
           </li>
           <li>
-            <Link href="#" mini={!isOpen}>
+            <Link 
+              href="#" 
+              active={currentPage === 'plans'} 
+              mini={!isOpen}
+              onClick={() => onNavigate('plans')}
+            >
               <ClipboardList className="w-5 h-5" />
               {isOpen && 'Plans'}
             </Link>
           </li>
           <li>
-            <Link href="#" mini={!isOpen}>
+            <Link 
+              href="#" 
+              active={currentPage === 'library'} 
+              mini={!isOpen}
+              onClick={() => onNavigate('library')}
+            >
               <Library className="w-5 h-5" />
               {isOpen && 'Library'}
             </Link>
@@ -64,13 +74,23 @@ export function Sidebar({ isOpen, onToggle, onNavigate, currentPage }: SidebarPr
       <div className="mt-auto p-4">
         <ul className="space-y-2">
           <li>
-            <Link href="#" mini={!isOpen}>
+            <Link 
+              href="#" 
+              active={currentPage === 'settings'}
+              mini={!isOpen}
+              onClick={() => onNavigate('settings')}
+            >
               <Settings className="w-5 h-5" />
               {isOpen && 'Settings'}
             </Link>
           </li>
           <li>
-            <Link href="#" mini={!isOpen}>
+            <Link 
+              href="#" 
+              active={currentPage === 'account'}
+              mini={!isOpen}
+              onClick={() => onNavigate('account')}
+            >
               <User className="w-5 h-5" />
               {isOpen && 'Account'}
             </Link>
